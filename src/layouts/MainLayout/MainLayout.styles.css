@@ -1,0 +1,7 @@
+.background {
+  @apply bg-day-lightest dark:bg-night-darkest font-sans text-night-darkest dark:text-day-lightest min-h-screen;
+}
+
+.app-container {
+  @apply w-container mx-auto;
+}
