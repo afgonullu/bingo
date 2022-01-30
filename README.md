@@ -14,6 +14,16 @@
 - [ x ] initial representation
 - [ x ] add more data set and select box
   30 mins
-- [ ] logic
+- [ x ] logic
+
+  - [ x ] winner conditions
+  - [ x ] current state of the card
+  - [ x ] handle and update state of the card
+    45 mins
+  - [ x ] check current state vs winner conditions
+    15 mins, except there is a bug where diagonal is not considered winner. come back to this later.
+  - [ x ] fix diagonal bug
+    10 mins
+
 - [ ] improve styling
 - [ ] backend + db

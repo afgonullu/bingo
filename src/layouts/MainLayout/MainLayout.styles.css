@@ -3,5 +3,5 @@
 }
 
 .app-container {
-  @apply w-container mx-auto;
+  @apply w-full lg:w-container mx-auto text-xs md:text-sm lg:text-base 2xl:text-xl;
 }
