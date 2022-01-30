@@ -5,3 +5,4 @@
 @tailwind utilities;
 
 @import "./layouts/MainLayout/MainLayout.styles.css";
+@import "./pages/Home/Home.styles.css";
