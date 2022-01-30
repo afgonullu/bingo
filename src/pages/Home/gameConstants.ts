@@ -13,7 +13,7 @@ export const winningConditions = [
   [4, 8, 12, 16, 20],
 ]
 
-export const bingoDecks: { [key: string]: any } = {
+export const bingoDecks: { [key: string]: string[] } = {
   numbers: [
     "1",
     "2",

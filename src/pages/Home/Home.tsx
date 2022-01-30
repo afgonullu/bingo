@@ -29,7 +29,7 @@ const Home: React.FC = () => {
     checkWinner()
   }, [selectedItems])
 
-  const handleSelectDeck = (e: any) => {
+  const handleSelectDeck = (e: { target: { value: string } }) => {
     setSelectedDeck(e.target.value)
     setSelectedItems([12])
     setGameWon(false)
