@@ -45,6 +45,7 @@ const Home: React.FC = () => {
     setSelectedDeck(e.target.value)
     setSelectedItems([12])
     setGameWon(false)
+    setPossibleWinConditions(winningConditions)
   }
 
   const handleSelectItem = (item: string, index: number) => {
@@ -57,6 +58,7 @@ const Home: React.FC = () => {
     setSelectedDeck("books and authors worth reading")
     setSelectedItems([12])
     setGameWon(false)
+    setPossibleWinConditions(winningConditions)
   }
 
   return (
