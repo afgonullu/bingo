@@ -6,7 +6,7 @@
 
 @layer components {
   .input-base {
-    @apply transition-transform ease-in-out delay-75 duration-500 bg-day-lightest dark:bg-night-darkest border border-black w-16 2xl:w-20 p-1 box-border rounded-normal;
+    @apply transition-transform ease-in-out delay-75 duration-500 bg-day-lightest dark:bg-night-darkest border border-black w-16 2xl:w-20 p-1 box-border rounded-normal cursor-pointer;
   }
 
   .input-control {
