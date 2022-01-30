@@ -1,11 +1,27 @@
+.controls {
+  @apply w-full flex justify-between px-1 md:px-2 mb-2;
+}
+
 .bingoCardContainer {
-  @apply grid grid-cols-5;
+  @apply grid grid-cols-5 w-full my-3;
 }
 
 .bingoCard {
-  @apply transition duration-1000 ease-out delay-150 flex justify-center items-center p-1 lg:p-2 text-center border border-night-darkest m-1 lg:m-2;
+  @apply transition duration-300 ease-out delay-75 flex justify-center items-center px-1 lg:px-2 py-4 text-center border border-night-darkest dark:border-day-lightest sm:m-0 md:m-1 lg:m-2 h-24 rounded-lg;
 }
 
 .bingoCardSelected {
-  @apply bg-green-200;
+  @apply bg-primary;
+}
+
+.selectBox {
+  @apply py-2 px-5 border rounded-lg dark:bg-night-darkest dark:border-day-lightest;
+}
+
+.resetButton {
+  @apply py-2 px-4 border rounded-lg z-50;
+}
+
+.resetButtonEmphasised {
+  @apply bg-primary text-day-lightest border-day-lightest;
 }

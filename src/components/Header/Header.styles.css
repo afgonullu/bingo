@@ -1,0 +1,15 @@
+.header {
+  @apply w-full p-5 bg-night-dark dark:bg-primary text-day-lighter mb-4;
+}
+
+.header-container {
+  @apply w-full lg:w-container mx-auto flex items-center justify-between;
+}
+
+.switchPos-light {
+  @apply flex justify-start;
+}
+
+.switchPos-dark {
+  @apply flex justify-end;
+}

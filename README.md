@@ -25,5 +25,10 @@
   - [ x ] fix diagonal bug
     10 mins
 
-- [ ] improve styling
+- [ x ] improve styling
+  1 hr + 30 minutes
 - [ ] backend + db
+      dropped -
+
+Fireworks:
+Copyright (c) 2022 by Eddie Lin (https://codepen.io/yshlin/pen/ylDEk)

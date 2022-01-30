@@ -1,7 +1,7 @@
 .background {
-  @apply bg-day-lightest dark:bg-night-darkest font-sans text-night-darkest dark:text-day-lightest min-h-screen;
+  @apply bg-day-lightest dark:bg-night-darkest font-sans text-night-darkest dark:text-day-lightest min-h-screen  text-xs md:text-sm lg:text-base 2xl:text-xl;
 }
 
 .app-container {
-  @apply w-full lg:w-container mx-auto text-xs md:text-sm lg:text-base 2xl:text-xl;
+  @apply w-screen lg:w-container h-screen flex flex-col items-center mx-auto;
 }

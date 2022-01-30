@@ -4,5 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .input-base {
+    @apply transition-transform ease-in-out delay-75 duration-500 bg-day-lightest dark:bg-night-darkest border border-black w-16 2xl:w-20 p-1 box-border rounded-normal;
+  }
+
+  .input-control {
+    @apply text-xs rounded-full flex justify-center items-center;
+    background: linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
+  }
+
+  .button-base {
+    @apply py-3 px-6;
+  }
+
+  .box-shadow {
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.08);
+  }
+}
+
 @import "./layouts/MainLayout/MainLayout.styles.css";
 @import "./pages/Home/Home.styles.css";
+@import "./components/Header/Header.styles.css";
+@import "./components/Fireworks/Fireworks.styles.css";
