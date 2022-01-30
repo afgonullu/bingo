@@ -9,7 +9,16 @@ const Home: React.FC = () => {
   const [bingoData, setBingoData] = useState<string[]>([])
 
   const [isGameWon, setGameWon] = useState<boolean>(false)
+  const [possibleWinConditions, setPossibleWinConditions] = useState<number[][]>(winningConditions)
   const [selectedItems, setSelectedItems] = useState<number[]>([12])
+
+  useEffect(() => {
+    if (isGameWon) {
+      setTimeout(() => {
+        setGameWon(false)
+      }, 3000)
+    }
+  }, [isGameWon])
 
   useEffect(() => {
     const array = [...bingoDecks[selectedDeck]].sort(() => Math.random() - 0.5)
@@ -18,8 +27,11 @@ const Home: React.FC = () => {
   }, [selectedDeck])
 
   const checkWinner = () => {
-    for (let i = 0; i < winningConditions.length; i++) {
-      if (winningConditions[i].every((value) => selectedItems.indexOf(value) >= 0)) {
+    for (let i = 0; i < possibleWinConditions.length; i++) {
+      if (possibleWinConditions[i].every((value) => selectedItems.indexOf(value) >= 0)) {
+        const newArray = [...possibleWinConditions]
+        newArray.splice(i, 1)
+        setPossibleWinConditions(newArray)
         setGameWon(true)
       }
     }
@@ -77,7 +89,7 @@ const Home: React.FC = () => {
           )
         })}
       </div>
-      {isGameWon && <h2>You Win!!! Congratulations!!!</h2>}
+      {isGameWon && <h2>You Got A Bingo!</h2>}
     </>
   )
 }
