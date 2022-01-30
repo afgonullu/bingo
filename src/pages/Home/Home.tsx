@@ -41,7 +41,7 @@ const Home: React.FC = () => {
     }
   }
 
-  const handleReset = (e: any) => {
+  const handleReset = () => {
     setSelectedDeck("books and authors worth reading")
     setSelectedItems([12])
     setGameWon(false)
